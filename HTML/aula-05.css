@@ -1,0 +1,25 @@
+footer {
+    text-align: center;
+    background-color: black;
+    color: white;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+header {
+    text-align: center;
+    background-color: black;
+    color: white;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+main {
+    min-height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

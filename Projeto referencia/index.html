@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="SideLook - Transforme suas roupas em looks incríveis com IA. Receba sugestões personalizadas todos os dias baseadas no clima.">
+    <title>SideLook - Seu Estilista Pessoal com IA</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-content">
+                <div class="logo">
+                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                        <rect width="32" height="32" rx="8" fill="url(#gradient)"/>
+                        <path d="M16 8L20 12H12L16 8Z" fill="white"/>
+                        <rect x="12" y="12" width="8" height="12" fill="white"/>
+                        <defs>
+                            <linearGradient id="gradient" x1="0" y1="0" x2="32" y2="32">
+                                <stop offset="0%" stop-color="#667eea"/>
+                                <stop offset="100%" stop-color="#764ba2"/>
+                            </linearGradient>
+                        </defs>
+                    </svg>
+                    <span class="logo-text">SideLook</span>
+                </div>
+                <div class="nav-links">
+                    <a href="#features">Recursos</a>
+                    <a href="#how-it-works">Como Funciona</a>
+                    <a href="#pricing">Planos</a>
+                    <a href="#" class="btn-secondary-small">Entrar</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ATENÇÃO: Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <div class="badge">✨ Novo: Look do Dia com IA</div>
+                    <h1 class="hero-title">
+                        Nunca mais perca tempo pensando
+                        <span class="gradient-text">"o que vou vestir hoje?"</span>
+                    </h1>
+                    <p class="hero-description">
+                        SideLook usa inteligência artificial para transformar suas roupas em looks incríveis. 
+                        Tire fotos do seu guarda-roupa e receba sugestões personalizadas todos os dias, 
+                        baseadas no clima e na sua agenda.
+                    </p>
+                    <div class="hero-cta">
+                        <a href="#signup" class="btn-primary">
+                            Começar Gratuitamente
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <path d="M7.5 15L12.5 10L7.5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            </svg>
+                        </a>
+                        <a href="#how-it-works" class="btn-secondary">Ver como funciona</a>
+                    </div>
+                    <div class="social-proof">
+                        <div class="avatars">
+                            <div class="avatar" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);"></div>
+                            <div class="avatar" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);"></div>
+                            <div class="avatar" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);"></div>
+                            <div class="avatar" style="background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);"></div>
+                        </div>
+                        <p><strong>500+</strong> pessoas já estão vestindo melhor</p>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="phone-mockup">
+                        <div class="phone-screen">
+                            <div class="mock-header">
+                                <div class="mock-time">9:41</div>
+                                <div class="mock-icons"></div>
+                            </div>
+                            <div class="mock-content">
+                                <div class="look-card">
+                                    <div class="look-title">☀️ Look do Dia</div>
+                                    <div class="outfit-grid">
+                                        <div class="outfit-item" style="background: linear-gradient(135deg, #e3e8ef 0%, #c7d0dd 100%);">
+                                            <div class="item-label">Camisa</div>
+                                        </div>
+                                        <div class="outfit-item" style="background: linear-gradient(135deg, #2d3748 0%, #1a202c 100%);">
+                                            <div class="item-label">Calça</div>
+                                        </div>
+                                        <div class="outfit-item" style="background: linear-gradient(135deg, #8b7355 0%, #6b5444 100%);">
+                                            <div class="item-label">Sapato</div>
+                                        </div>
+                                    </div>
+                                    <div class="weather-info">
+                                        <span>23°C</span>
+                                        <span>•</span>
+                                        <span>Ensolarado</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="floating-element floating-1">
+                        <div class="mini-card">
+                            <span class="emoji">👔</span>
+                            <span>Trabalho</span>
+                        </div>
+                    </div>
+                    <div class="floating-element floating-2">
+                        <div class="mini-card">
+                            <span class="emoji">🎉</span>
+                            <span>Festa</span>
+                        </div>
+                    </div>
+                    <div class="floating-element floating-3">
+                        <div class="mini-card">
+                            <span class="emoji">☕</span>
+                            <span>Casual</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hero-bg"></div>
+    </section>
+
+    <!-- INTERESSE: Problema & Solução -->
+    <section class="problem-solution">
+        <div class="container">
+            <div class="section-header centered">
+                <span class="section-label">O Problema</span>
+                <h2>Você tem roupas, mas nunca tem "o que vestir"?</h2>
+            </div>
+            <div class="problems-grid">
+                <div class="problem-card">
+                    <div class="problem-icon">⏰</div>
+                    <h3>Perde 15-30min todo dia</h3>
+                    <p>Escolhendo roupa, experimentando combinações que não funcionam</p>
+                </div>
+                <div class="problem-card">
+                    <div class="problem-icon">👗</div>
+                    <h3>Usa sempre as mesmas peças</h3>
+                    <p>Enquanto 70% do seu guarda-roupa fica esquecido no armário</p>
+                </div>
+                <div class="problem-card">
+                    <div class="problem-icon">🌧️</div>
+                    <h3>Clima é sempre surpresa</h3>
+                    <p>Sai de casa e descobre que deveria ter vestido outra coisa</p>
+                </div>
+            </div>
+            
+            <div class="solution-box">
+                <h2>SideLook resolve tudo isso com IA</h2>
+                <p>Tire fotos das suas roupas uma vez. Nossa inteligência artificial cataloga tudo automaticamente 
+                e cria combinações perfeitas baseadas no clima, na ocasião e no seu estilo pessoal.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- INTERESSE: Features -->
+    <section id="features" class="features">
+        <div class="container">
+            <div class="section-header centered">
+                <span class="section-label">Recursos Principais</span>
+                <h2>Tudo que você precisa para vestir bem, todos os dias</h2>
+            </div>
+            
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">📸</div>
+                    <h3>Upload Rápido</h3>
+                    <p>Envie de 5 a 20 fotos do seu guarda-roupa em segundos. Simples assim.</p>
+                </div>
+                
+                <div class="feature-card featured">
+                    <div class="feature-badge">⭐ Mais Popular</div>
+                    <div class="feature-icon">🤖</div>
+                    <h3>IA Inteligente</h3>
+                    <p>Reconhecimento automático de categoria, cor, estilo e clima ideal para cada peça.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">✨</div>
+                    <h3>3 Looks por Evento</h3>
+                    <p>Escolha o tipo de evento e receba 3 sugestões completas instantaneamente.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">☀️</div>
+                    <h3>Look do Dia</h3>
+                    <p>Todo dia pela manhã, um look novo baseado no clima da sua cidade.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">🔄</div>
+                    <h3>Ajustes Instantâneos</h3>
+                    <p>Não gostou de uma peça? Troque e regenere variações com um clique.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">💾</div>
+                    <h3>Salvar & Compartilhar</h3>
+                    <p>Organize looks favoritos, crie coleções e compartilhe com amigos.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- INTERESSE/DESEJO: Como Funciona -->
+    <section id="how-it-works" class="how-it-works">
+        <div class="container">
+            <div class="section-header centered">
+                <span class="section-label">Processo Simples</span>
+                <h2>Em 3 passos você está pronto</h2>
+            </div>
+            
+            <div class="steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h3>Fotografe suas roupas</h3>
+                        <p>Tire fotos das peças do seu guarda-roupa. Pode ser no cabide, na cama, onde for mais fácil.</p>
+                        <div class="step-visual">
+                            <div class="visual-box">
+                                <span style="font-size: 48px;">📱</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="step-connector"></div>
+                
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h3>IA cataloga tudo automaticamente</h3>
+                        <p>Nossa inteligência artificial identifica categoria, cor, estilo e clima ideal de cada peça.</p>
+                        <div class="step-visual">
+                            <div class="visual-box ai-animation">
+                                <span style="font-size: 48px;">🧠</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="step-connector"></div>
+                
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h3>Receba looks incríveis</h3>
+                        <p>Gere looks para qualquer ocasião e receba sugestões diárias personalizadas.</p>
+                        <div class="step-visual">
+                            <div class="visual-box success-animation">
+                                <span style="font-size: 48px;">✨</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- DESEJO: Benefícios Emocionais -->
+    <section class="benefits">
+        <div class="container">
+            <div class="benefits-content">
+                <div class="benefits-text">
+                    <span class="section-label">Benefícios Reais</span>
+                    <h2>Transforme suas manhãs e seu estilo</h2>
+                    <div class="benefit-list">
+                        <div class="benefit-item">
+                            <div class="check-icon">✓</div>
+                            <div>
+                                <h4>Economize 2+ horas por semana</h4>
+                                <p>Pare de perder tempo toda manhã decidindo o que vestir</p>
+                            </div>
+                        </div>
+                        <div class="benefit-item">
+                            <div class="check-icon">✓</div>
+                            <div>
+                                <h4>Use 100% do seu guarda-roupa</h4>
+                                <p>Descubra combinações que você nunca pensou em fazer</p>
+                            </div>
+                        </div>
+                        <div class="benefit-item">
+                            <div class="check-icon">✓</div>
+                            <div>
+                                <h4>Vista-se sempre adequadamente</h4>
+                                <p>Nunca mais erre com o clima ou com o dress code</p>
+                            </div>
+                        </div>
+                        <div class="benefit-item">
+                            <div class="check-icon">✓</div>
+                            <div>
+                                <h4>Sinta-se mais confiante</h4>
+                                <p>Tenha certeza de que está bem vestido para qualquer ocasião</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="benefits-visual">
+                    <div class="stat-card">
+                        <div class="stat-number">2h+</div>
+                        <div class="stat-label">economizadas/semana</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">3x</div>
+                        <div class="stat-label">mais variedade</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">100%</div>
+                        <div class="stat-label">do guarda-roupa</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- DESEJO: Social Proof -->
+    <section class="testimonials">
+        <div class="container">
+            <div class="section-header centered">
+                <span class="section-label">Depoimentos</span>
+                <h2>O que nossos usuários dizem</h2>
+            </div>
+            
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <p class="testimonial-text">
+                        "Antes eu passava 20 minutos toda manhã escolhendo roupa. Agora acordo, abro o app e já sei exatamente o que vestir. Mudou minha rotina!"
+                    </p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">M</div>
+                        <div>
+                            <div class="author-name">Mariana Silva</div>
+                            <div class="author-role">Marketing Manager</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <p class="testimonial-text">
+                        "Descobri peças que tinha esquecido no armário! O app criou combinações que eu nunca teria pensado. Vale muito a pena."
+                    </p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);">R</div>
+                        <div>
+                            <div class="author-name">Rafael Costa</div>
+                            <div class="author-role">Designer</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <p class="testimonial-text">
+                        "A função de Look do Dia é perfeita. Sempre adequado ao clima e ainda por cima estiloso. Não consigo mais viver sem!"
+                    </p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);">J</div>
+                        <div>
+                            <div class="author-name">Juliana Mendes</div>
+                            <div class="author-role">Consultora</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- DESEJO: Pricing -->
+    <section id="pricing" class="pricing">
+        <div class="container">
+            <div class="section-header centered">
+                <span class="section-label">Planos</span>
+                <h2>Comece grátis, evolua quando quiser</h2>
+            </div>
+            
+            <div class="pricing-cards">
+                <div class="pricing-card">
+                    <div class="plan-header">
+                        <h3>Gratuito</h3>
+                        <div class="price">
+                            <span class="currency">R$</span>
+                            <span class="amount">0</span>
+                            <span class="period">/mês</span>
+                        </div>
+                    </div>
+                    <div class="plan-features">
+                        <div class="feature">✓ Até 20 peças de roupa</div>
+                        <div class="feature">✓ 3 looks por dia</div>
+                        <div class="feature">✓ Look do Dia</div>
+                        <div class="feature">✓ Catalogação com IA</div>
+                        <div class="feature">✓ 5 looks salvos</div>
+                    </div>
+                    <a href="#signup" class="plan-button secondary">Começar Grátis</a>
+                </div>
+                
+                <div class="pricing-card premium">
+                    <div class="popular-badge">🔥 Mais Popular</div>
+                    <div class="plan-header">
+                        <h3>Premium</h3>
+                        <div class="price">
+                            <span class="currency">R$</span>
+                            <span class="amount">19,90</span>
+                            <span class="period">/mês</span>
+                        </div>
+                    </div>
+                    <div class="plan-features">
+                        <div class="feature">✓ <strong>Peças ilimitadas</strong></div>
+                        <div class="feature">✓ <strong>Looks ilimitados</strong></div>
+                        <div class="feature">✓ Look do Dia personalizado</div>
+                        <div class="feature">✓ IA avançada</div>
+                        <div class="feature">✓ Looks salvos ilimitados</div>
+                        <div class="feature">✓ Coleções personalizadas</div>
+                        <div class="feature">✓ Suporte prioritário</div>
+                        <div class="feature">✓ Sem anúncios</div>
+                    </div>
+                    <a href="#signup" class="plan-button primary">Começar Premium</a>
+                </div>
+            </div>
+            
+            <div class="guarantee">
+                <div class="guarantee-icon">🛡️</div>
+                <div class="guarantee-text">
+                    <strong>Garantia de 7 dias</strong>
+                    <p>Não gostou? Devolvemos 100% do seu dinheiro, sem perguntas.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- AÇÃO: CTA Final -->
+    <section id="signup" class="final-cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Pronto para transformar seu estilo?</h2>
+                <p>Junte-se a centenas de pessoas que já economizam tempo e vestem melhor todos os dias.</p>
+                
+                <form class="signup-form">
+                    <input type="email" placeholder="Seu melhor e-mail" required>
+                    <button type="submit" class="btn-primary">
+                        Começar Gratuitamente
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path d="M7.5 15L12.5 10L7.5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </button>
+                </form>
+                
+                <div class="signup-benefits">
+                    <span>✓ Grátis para sempre</span>
+                    <span>✓ Sem cartão de crédito</span>
+                    <span>✓ Configuração em 5 minutos</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="logo">
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                            <rect width="32" height="32" rx="8" fill="url(#gradient2)"/>
+                            <path d="M16 8L20 12H12L16 8Z" fill="white"/>
+                            <rect x="12" y="12" width="8" height="12" fill="white"/>
+                            <defs>
+                                <linearGradient id="gradient2" x1="0" y1="0" x2="32" y2="32">
+                                    <stop offset="0%" stop-color="#667eea"/>
+                                    <stop offset="100%" stop-color="#764ba2"/>
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                        <span class="logo-text">SideLook</span>
+                    </div>
+                    <p>Seu estilista pessoal com IA</p>
+                </div>
+                
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Produto</h4>
+                        <a href="#features">Recursos</a>
+                        <a href="#how-it-works">Como Funciona</a>
+                        <a href="#pricing">Planos</a>
+                    </div>
+                    
+                    <div class="footer-column">
+                        <h4>Empresa</h4>
+                        <a href="#">Sobre</a>
+                        <a href="#">Blog</a>
+                        <a href="#">Contato</a>
+                    </div>
+                    
+                    <div class="footer-column">
+                        <h4>Legal</h4>
+                        <a href="#">Privacidade</a>
+                        <a href="#">Termos</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 SideLook. Todos os direitos reservados.</p>
+                <div class="social-links">
+                    <a href="#">Instagram</a>
+                    <a href="#">Twitter</a>
+                    <a href="#">Facebook</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
